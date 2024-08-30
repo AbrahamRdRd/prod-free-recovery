@@ -1,0 +1,1 @@
+System.register(["./https-legacy-Jp9Bf5WL.js"],(function(e,t){"use strict";var s;return{setters:[e=>{s=e.h}],execute:function(){e("c",((e,t)=>s.post(`/api/departments/${e}/reservations`,t))),e("g",(e=>s.get(`/api/users/${e}/reservations`)))}}}));

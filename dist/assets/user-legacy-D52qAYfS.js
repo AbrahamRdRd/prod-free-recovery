@@ -1,0 +1,1 @@
+System.register(["./https-legacy-Jp9Bf5WL.js"],(function(e,s){"use strict";var t;return{setters:[e=>{t=e.h}],execute:function(){e("g",(e=>t.get(`/api/users/${e}`))),e("c",(e=>t.post("/api/users",e))),e("a",((e,s)=>t.post(`/api/users/${e}?_method=PUT`,s))),e("u",((e,s)=>t.post(`/api/users/${e}/avatar?_method=PATCH`,s))),e("v",(()=>t.get("api/users/verify/email")))}}}));

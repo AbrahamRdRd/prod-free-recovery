@@ -1,1 +1,0 @@
-System.register(["./https-legacy-CaN7AL11.js"],(function(e,t){"use strict";var s;return{setters:[e=>{s=e.h}],execute:function(){e("c",((e,t)=>s.post(`/api/departments/${e}/reservations`,t))),e("g",(e=>s.get(`/api/users/${e}/reservations`)))}}}));
