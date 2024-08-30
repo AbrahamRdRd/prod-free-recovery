@@ -1,1 +1,0 @@
-import{h as t}from"./https-DyLAiSWF.js";const r=s=>t.get("/api/users/".concat(s)),o=s=>t.post("/api/users",s),p=(s,a)=>t.post("/api/users/".concat(s,"?_method=PUT"),a),u=(s,a)=>t.post("/api/users/".concat(s,"/avatar?_method=PATCH"),a);export{u as a,o as c,r as g,p as u};

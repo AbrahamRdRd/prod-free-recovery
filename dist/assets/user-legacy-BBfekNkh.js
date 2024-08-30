@@ -1,1 +1,0 @@
-System.register(["./https-legacy-vifKKqOV.js"],(function(s,t){"use strict";var e;return{setters:[s=>{e=s.h}],execute:function(){s("g",(s=>e.get(`/api/users/${s}`))),s("c",(s=>e.post("/api/users",s))),s("a",((s,t)=>e.post(`/api/users/${s}?_method=PUT`,t))),s("u",((s,t)=>e.post(`/api/users/${s}/avatar?_method=PATCH`,t)))}}}));

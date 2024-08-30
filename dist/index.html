@@ -8,9 +8,9 @@
 
     <meta name="color-scheme" content="light dark" />
     <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+     name="viewport" 
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
 
@@ -19,14 +19,17 @@
     <!-- add to homescreen for ios -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Ionic App" />
+
+    <!-- add ionic selectable componente-->
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <script type="module" crossorigin src="/assets/index-m1nEGGOe.js"></script>
+    <script type="module" crossorigin src="/assets/index-DC9Bi3oe.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/@vue-yfti66JX.js">
     <link rel="modulepreload" crossorigin href="/assets/@stencil-CHpqkKxm.js">
     <link rel="modulepreload" crossorigin href="/assets/vue-router-C1vmwl4t.js">
-    <link rel="modulepreload" crossorigin href="/assets/ionicons-vuVtR0Xh.js">
-    <link rel="modulepreload" crossorigin href="/assets/@ionic-BYXd9M1L.js">
+    <link rel="modulepreload" crossorigin href="/assets/ionicons-lnr37WKp.js">
+    <link rel="modulepreload" crossorigin href="/assets/@ionic-D3TE2VMj.js">
     <link rel="modulepreload" crossorigin href="/assets/pinia-FlwmMssk.js">
+    <link rel="modulepreload" crossorigin href="/assets/crypto-js-BD323iWx.js">
     <link rel="modulepreload" crossorigin href="/assets/register-service-worker-TYP_X6yW.js">
     <link rel="stylesheet" crossorigin href="/assets/@ionic-Dr5M-HgF.css">
     <link rel="stylesheet" crossorigin href="/assets/index-D-OmhUBE.css">
@@ -39,7 +42,8 @@
     <div id="app"></div>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PHQ2XMYJL"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-1PHQ2XMYJL"></script> -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-1PHQ2XMYJL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -47,9 +51,19 @@
     
       gtag('config', 'G-1PHQ2XMYJL');
     </script>
+    <script type="text/javascript">
+      if('serviceWorker' in navigator){
+        // Register service worker
+        navigator.serviceWorker.register('/sw.js').then(function(reg){
+          console.log("SW registration succeeded. Scope is "+reg.scope);
+        }).catch(function(err){
+          console.error("SW registration failed with error "+err);
+        });
+      }
+    </script>
     <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-    <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-DlSeEVVy.js"></script>
-    <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-CTO43FBS.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="/assets/polyfills-legacy-yGWH0i0p.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="/assets/index-legacy-Dwp93Gjm.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
   </body>
 
 </html>

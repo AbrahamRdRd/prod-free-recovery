@@ -1,1 +1,0 @@
-System.register(["./https-legacy-D69rJZ8x.js"],(function(e,s){"use strict";var t;return{setters:[e=>{t=e.h}],execute:function(){e("g",(e=>t.get(`/api/users/${e}`))),e("c",(e=>t.post("/api/users",e))),e("u",((e,s)=>t.put(`/api/users/${e}`,s)))}}}));
